@@ -1,0 +1,132 @@
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #6b6b6b, #6b6b6b);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header p {
+    font-size: 18px;
+    opacity: 0.9;
+} 
+.header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    background: transparent;
+}
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15%;
+    background: #363b42;
+
+    border-radius: 25px;   /* 👈 Rayon de bordure */
+}
+.logo img {
+    width: 200px;   /* Largeur contrôlée */
+    height: auto;   /* Garde les proportions */
+}
+
+.nav-links {
+    list-style: none;          /* Supprime les puces */
+    display: flex;             /* Aligne horizontalement */
+    gap: 30px;                 /* Espace entre les liens */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e2b811;            /* Couleur au survol */
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.about-text {
+    flex: 1;
+}
+.about-section {
+    padding: 60px 10%;
+    background: #f4f6f9;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    width: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+    color: #1e3c72;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.about-text {
+    flex: 1;
+}
+/* CONTACT */
+.contact {
+    text-align: center
+}
+/* FOOTER */
+footer {
+    background: #4f5257;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 80%;
+    }
+}
